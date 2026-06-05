@@ -1,0 +1,61 @@
+export type ExerciseCategory = "lower" | "upper" | "core";
+
+export type ExerciseCatalogItem = {
+  id: string;
+  name: string;
+  default_desc: string;
+  category?: ExerciseCategory;
+};
+
+export const EXERCISES: ExerciseCatalogItem[] = [
+  { id: "ex_001", name: "에어 스콰트", category: "lower", default_desc: "발을 어깨 너비로, 가슴을 펴고 엉덩이를 뒤로 보내며 앉기." },
+  { id: "ex_002", name: "고블릿 스콰트", category: "lower", default_desc: "덤벨을 가슴 앞에 들고, 무릎이 발끝 방향을 따라가게." },
+  { id: "ex_003", name: "프론트 스콰트", category: "lower", default_desc: "팔꿈치를 높게, 코어를 잡고 천천히 내려갔다 올리기." },
+  { id: "ex_004", name: "백 스콰트", category: "lower", default_desc: "바를 안정적으로 얹고, 중립 척추 유지하며 일어서기." },
+  { id: "ex_005", name: "스플릿 스콰트", category: "lower", default_desc: "긴 보폭, 수직으로 내려가고 앞발 전체에 체중." },
+  { id: "ex_006", name: "불가리안 스플릿 스콰트", category: "lower", default_desc: "뒷발을 올리고, 상체를 약간 앞으로, 가동범위 끝까지." },
+  { id: "ex_007", name: "리버스 런지", category: "lower", default_desc: "뒤로 부드럽게 스텝, 앞무릎 안정, 앞발로 밀어 올리기." },
+  { id: "ex_008", name: "워킹 런지", category: "lower", default_desc: "길고 통제된 보폭, 골반 수평 유지." },
+  { id: "ex_009", name: "레그 프레스", category: "lower", default_desc: "천천히 내리고, 무릎 완전 잠금 피하기." },
+  { id: "ex_010", name: "스텝업", category: "lower", default_desc: "발 전체로 밀어 올리고, 위에서 곧게 서기." },
+  { id: "ex_011", name: "힙 쓰러스트", category: "lower", default_desc: "골반 후방 경사, 정점에서 둔근 수축." },
+  { id: "ex_012", name: "글루트 브릿지", category: "lower", default_desc: "갈비뼈 내리고, 발꿈치로 밀며 정점에서 잠깐 멈추기." },
+  { id: "ex_013", name: "루마니안 데드리프트", category: "lower", default_desc: "엉덩이 힌지, 바를 몸 가까이, 햄스트링 느끼기." },
+  { id: "ex_014", name: "컨벤셔널 데드리프트", category: "lower", default_desc: "코어 브레이싱, 슬랙 제거 후 일어서기." },
+  { id: "ex_015", name: "수모 데드리프트", category: "lower", default_desc: "넓은 보폭, 무릎 밖으로, 바닥에서 가슴 펴기." },
+  { id: "ex_016", name: "케틀벨 스윙", category: "lower", default_desc: "폭발적 힙 스냅, 팔은 이완, 목 중립." },
+  { id: "ex_017", name: "굿모닝", category: "lower", default_desc: "무릎 살짝 굽히고, 깊은 힌지, 척추 중립." },
+  { id: "ex_018", name: "햄스트링 컬", category: "lower", default_desc: "올릴 때와 내릴 때 모두 통제." },
+  { id: "ex_019", name: "레그 익스텐션", category: "lower", default_desc: "부드럽게 들어 올리고, 관성으로 차기 금지." },
+  { id: "ex_020", name: "카프 레이즈", category: "lower", default_desc: "아래에서 최대 스트레치, 위에서 잠깐 멈추기." },
+  { id: "ex_021", name: "푸시업", category: "upper", default_desc: "몸 일직선, 팔꿈치 30~45도, 끝까지 펴기." },
+  { id: "ex_022", name: "인클라인 푸시업", category: "upper", default_desc: "손을 높게, 플랭크 정렬 유지." },
+  { id: "ex_023", name: "덤벨 벤치 프레스", category: "upper", default_desc: "견갑 후인, 손목 정렬, 천천히 내리기." },
+  { id: "ex_024", name: "바벨 벤치 프레스", category: "upper", default_desc: "상부 등 고정, 가슴 하단 터치, 수직으로 밀기." },
+  { id: "ex_025", name: "인클라인 덤벨 프레스", category: "upper", default_desc: "약간 인클라인, 눈 높이 방향으로 밀기." },
+  { id: "ex_026", name: "오버헤드 프레스", category: "upper", default_desc: "둔근 조이고, 머리 위로 일직선 밀기." },
+  { id: "ex_027", name: "덤벨 숄더 프레스", category: "upper", default_desc: "코어 조이고, 허리 과신전 피하기." },
+  { id: "ex_028", name: "레터럴 레이즈", category: "upper", default_desc: "팔꿈치를 이끌고, 어깨 높이에서 멈추기." },
+  { id: "ex_029", name: "프론트 레이즈", category: "upper", default_desc: "통제하며 들어 올리고, 몸 흔들기 금지." },
+  { id: "ex_030", name: "트라이셉스 푸시다운", category: "upper", default_desc: "팔꿈치 고정, 매 reps 끝까지 펴기." },
+  { id: "ex_031", name: "오버헤드 트라이셉스", category: "upper", default_desc: "팔꿈치 좁게, 아래에서 스트레치." },
+  { id: "ex_032", name: "딥스", category: "upper", default_desc: "어깨 내리고, 약간 앞으로 기울여 깊이 통제." },
+  { id: "ex_033", name: "풀업", category: "upper", default_desc: "데드행에서 시작, 턱을 바 쪽으로." },
+  { id: "ex_034", name: "랫 풀다운", category: "upper", default_desc: "팔꿈치를 갈비뼈 쪽으로, 어깨 으쓱 금지." },
+  { id: "ex_035", name: "시티드 케이블 로우", category: "upper", default_desc: "척추 중립, 견갑을 모으며 당기기." },
+  { id: "ex_036", name: "원암 덤벨 로우", category: "upper", default_desc: "엉덩이 쪽으로 당기고, 몸통 회전 피하기." },
+  { id: "ex_037", name: "바벨 로우", category: "upper", default_desc: "힌지 고정, 아래 갈비뼈까지 당기기." },
+  { id: "ex_038", name: "페이스 풀", category: "upper", default_desc: "이마 높이로 당기고, 엄지를 뒤로." },
+  { id: "ex_039", name: "리버스 플라이", category: "upper", default_desc: "팔꿈치 살짝 굽히고, 가슴 열며 천천히 내리기." },
+  { id: "ex_040", name: "백 익스텐션", category: "core", default_desc: "엉덩이 관절로 움직이고, 허리 과신전 피하기." },
+  { id: "ex_041", name: "바이셉스 컬", category: "upper", default_desc: "팔꿈치 몸 가까이, 몸 흔들기 금지." },
+  { id: "ex_042", name: "해머 컬", category: "upper", default_desc: "중립 그립, 전 범위 통제." },
+  { id: "ex_043", name: "플랭크", category: "core", default_desc: "복부·둔근 조이고, 몸 일직선 유지." },
+  { id: "ex_044", name: "사이드 플랭크", category: "core", default_desc: "발 쌓고, 엉덩이 들어 올려 일직선." },
+  { id: "ex_045", name: "데드 버그", category: "core", default_desc: "허리 바닥에 붙이고, 반대 팔·다리 뻗기." },
+  { id: "ex_046", name: "버드독", category: "core", default_desc: "멀리 뻗고, 몸통 흔들림 피하기." },
+  { id: "ex_047", name: "홀로우 홀드", category: "core", default_desc: "갈비뼈 내리고, 허리를 바닥에 눌러 붙이기." },
+  { id: "ex_048", name: "마운틴 클라이머", category: "core", default_desc: "손목 위 어깨, 빠르게 무릎 당기기." },
+  { id: "ex_049", name: "러시안 트위스트", category: "core", default_desc: "상체 세우고, 몸통으로 회전." },
+  { id: "ex_050", name: "줄넘기", category: "lower", default_desc: "작고 빠른 점프, 앞발로 부드럽게 착지." },
+];
